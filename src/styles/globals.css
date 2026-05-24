@@ -1,0 +1,153 @@
+/* ============================================
+   AMIF — Modern Tailwind v3 Design System
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --header-height: 80px;
+  
+  /* CSS custom properties for scrollbars and animations */
+  --color-primary: #EEA03E;
+  --color-primary-dark: #C67817;
+  --color-secondary: #FA554F;
+  --color-logo-grey: #646464;
+  --color-dark: #0F172A;
+  --color-light: #F8FAFC;
+}
+
+/* ─── Base Styles ─── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  html[lang="ar"] {
+    direction: rtl;
+    font-family: 'Noto Naskh Arabic', 'Arial', serif;
+  }
+
+  html[lang="fr"] {
+    direction: ltr;
+    font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    min-height: 100vh;
+    background-color: #FFFFFF;
+    color: #0F172A;
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* ─── Background Animations (Ambient Glow Blobs) ─── */
+@keyframes blob-animation-1 {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(50px, -70px) scale(1.15);
+  }
+  66% {
+    transform: translate(-30px, 40px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes blob-animation-2 {
+  0% {
+    transform: translate(0px, 0px) scale(1.05);
+  }
+  50% {
+    transform: translate(-60px, 50px) scale(0.85);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1.05);
+  }
+}
+
+@keyframes blob-animation-3 {
+  0% {
+    transform: translate(0px, 0px) scale(0.9);
+  }
+  33% {
+    transform: translate(-40px, -40px) scale(1.1);
+  }
+  66% {
+    transform: translate(40px, 30px) scale(0.95);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(0.9);
+  }
+}
+
+.animate-blob-1 {
+  animation: blob-animation-1 25s infinite alternate ease-in-out;
+}
+
+.animate-blob-2 {
+  animation: blob-animation-2 30s infinite alternate-reverse ease-in-out;
+}
+
+.animate-blob-3 {
+  animation: blob-animation-3 20s infinite alternate ease-in-out;
+}
+
+/* Subtle pattern overlay */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(226, 232, 240, 0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(226, 232, 240, 0.3) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle, rgba(226, 232, 240, 0.4) 1px, transparent 1px);
+}
+
+/* Custom transitions and glassmorphism */
+.glass-header {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-dark);
+}
+
+/* RTL Helpers */
+html[lang="ar"] .rtl-flip {
+  transform: scaleX(-1);
+}

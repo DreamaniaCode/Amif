@@ -1,0 +1,110 @@
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: var(--carbon-gray-90);
+  color: var(--carbon-gray-10);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  border-right: 1px solid var(--carbon-gray-100);
+}
+
+.brand {
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid var(--carbon-gray-80);
+}
+
+.logo {
+  filter: brightness(0) invert(1);
+}
+
+.adminLabel {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: var(--carbon-gray-30);
+  border-left: 1px solid var(--carbon-gray-70);
+  padding-left: 1rem;
+}
+
+.nav {
+  flex: 1;
+  padding: 1rem 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1.5rem;
+  color: var(--carbon-gray-30);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 400;
+  border-left: 4px solid transparent;
+  transition: background 0.15s, color 0.15s;
+}
+
+.navItem:hover {
+  background: var(--carbon-gray-80);
+  color: var(--carbon-white);
+}
+
+.navItem.active {
+  background: var(--carbon-gray-80);
+  color: var(--carbon-white);
+  border-left-color: var(--carbon-blue-50);
+  font-weight: 600;
+}
+
+.navIcon {
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+
+.navItem.active .navIcon {
+  opacity: 1;
+  color: var(--carbon-blue-50);
+}
+
+.chevron {
+  margin-left: auto;
+  opacity: 0.5;
+}
+
+.bottom {
+  padding: 1rem;
+  border-top: 1px solid var(--carbon-gray-80);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.siteLink, .logoutBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  font-size: 0.875rem;
+  color: var(--carbon-gray-30);
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s, color 0.15s;
+}
+
+.siteLink:hover, .logoutBtn:hover {
+  background: var(--carbon-gray-80);
+  color: var(--carbon-white);
+}

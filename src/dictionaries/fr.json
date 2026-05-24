@@ -1,0 +1,173 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "missions": "Missions",
+    "poles": "Pôles",
+    "team": "Équipe",
+    "blog": "Blog",
+    "contact": "Contact",
+    "join": "Nous rejoindre"
+  },
+  "hero": {
+    "title": "AMIF — Association Marocaine pour l'Inclusion Financière",
+    "subtitle": "Accompagner, former et connecter les porteurs de projets, entrepreneurs, jeunes diplômés, coopératives et acteurs économiques pour une inclusion financière durable au Maroc et en Afrique.",
+    "cta1": "Découvrir nos missions",
+    "cta2": "Nous contacter"
+  },
+  "about": {
+    "tag": "À propos de l'AMIF",
+    "title": "Notre engagement pour l'inclusion financière",
+    "text": "L'AMIF œuvre pour démocratiser l'accès à l'information financière, accompagner les porteurs de projets et renforcer les capacités des entrepreneurs, start-up, TPE, PME, artisans, coopératives et jeunes diplômés. L'association agit également en faveur de l'insertion économique, du développement humain, de la recherche appliquée et des partenariats institutionnels.",
+    "stat1_val": "17+",
+    "stat1_label": "Membres Fondateurs",
+    "stat2_val": "9",
+    "stat2_label": "Pôles d'Action",
+    "stat3_val": "100%",
+    "stat3_label": "Engagement Citoyen"
+  },
+  "missions": {
+    "tag": "Nos Missions",
+    "title": "Ce que nous faisons",
+    "subtitle": "L'AMIF s'engage à travers des actions concrètes pour l'inclusion financière et le développement économique au Maroc et en Afrique.",
+    "items": [
+      "Aide, appui, accompagnement et mentorat des start-up, TPE, PME, grandes entreprises, artisans, coopératives et porteurs de projets.",
+      "Faciliter l'accès aux prêts bancaires, crédits d'honneur, subventions, aides publiques et solutions de financement intelligentes.",
+      "Démocratiser l'entrepreneuriat inclusif, social et solidaire.",
+      "Stimuler les projets collaboratifs innovants dans tous les domaines économiques.",
+      "Favoriser l'insertion des jeunes diplômés à travers les stages, l'emploi et les formations pratiques.",
+      "Accompagner l'intégration économique des migrants africains au Maroc et des Marocains de retour de l'étranger.",
+      "Soutenir les femmes en situation précaire et les enfants handicapés.",
+      "Contribuer aux études, recherches et propositions en faveur de l'État et des organismes partenaires.",
+      "Promouvoir l'orientation, le développement humain et l'inclusion durable."
+    ]
+  },
+  "poles": {
+    "tag": "AMIF en Pôles",
+    "title": "Nos axes d'intervention",
+    "subtitle": "L'AMIF est organisée en 9 pôles spécialisés pour maximiser son impact sur le terrain.",
+    "items": [
+      {
+        "title": "Pôle Sensibilisation et Éducation Financière",
+        "desc": "Organiser des ateliers, formations et campagnes de sensibilisation pour diffuser la culture financière."
+      },
+      {
+        "title": "Pôle Recherche et Développement",
+        "desc": "Mener des études sur l'inclusion financière et l'entrepreneuriat, analyser les données et proposer des solutions innovantes."
+      },
+      {
+        "title": "Pôle Partenariats et Réseautage",
+        "desc": "Établir des relations avec les institutions financières, organisations et acteurs économiques pour développer des projets communs."
+      },
+      {
+        "title": "Pôle Suivi et Évaluation",
+        "desc": "Mettre en place des mécanismes d'évaluation de l'impact des actions de l'association."
+      },
+      {
+        "title": "Pôle Accompagnement des Entrepreneurs",
+        "desc": "Offrir un soutien personnalisé aux porteurs de projets en business plan, financement et gestion financière."
+      },
+      {
+        "title": "Pôle Communication et Marketing",
+        "desc": "Promouvoir les activités de l'association, sensibiliser le grand public et attirer de nouveaux membres."
+      },
+      {
+        "title": "Pôle Plaidoyer et Lobbying",
+        "desc": "Travailler avec les autorités et décideurs pour influencer les politiques en faveur de l'entrepreneuriat et de l'inclusion financière."
+      },
+      {
+        "title": "Pôle Social",
+        "desc": "Prendre en charge la femme en situation précaire ainsi que les enfants handicapés."
+      },
+      {
+        "title": "Pôle Relations Subsahariennes",
+        "desc": "Prendre en charge les relations Maroc-Africaines et renforcer la coopération Sud-Sud."
+      }
+    ]
+  },
+  "team": {
+    "tag": "Notre Équipe",
+    "title": "Les membres fondateurs",
+    "subtitle": "Une équipe pluridisciplinaire de professionnels engagés au service de l'inclusion financière."
+  },
+  "blog": {
+    "tag": "Blog & Actualités",
+    "title": "Dernières publications",
+    "subtitle": "Restez informés de nos activités, recherches et actualités en matière d'inclusion financière.",
+    "readMore": "Lire la suite",
+    "allPosts": "Tous les articles",
+    "categories": {
+      "all": "Tous",
+      "inclusion": "Inclusion financière",
+      "entrepreneuriat": "Entrepreneuriat",
+      "formation": "Formation",
+      "cooperatives": "Coopératives",
+      "financement": "Financement",
+      "recherche": "Recherche & développement",
+      "actualites": "Actualités AMIF",
+      "afrique": "Afrique & partenariats"
+    }
+  },
+  "contact": {
+    "tag": "Contactez-nous",
+    "title": "Nous sommes à votre écoute",
+    "subtitle": "Vous souhaitez collaborer avec l'AMIF ? Contactez-nous dès aujourd'hui.",
+    "formContact": "Formulaire de contact",
+    "formMembership": "Adhésion",
+    "formPartnership": "Partenariat",
+    "name": "Nom complet",
+    "email": "Adresse email",
+    "phone": "Téléphone",
+    "subject": "Sujet",
+    "message": "Votre message",
+    "profession": "Profession",
+    "city": "Ville",
+    "motivation": "Motivation",
+    "orgName": "Nom de l'organisation",
+    "contactPerson": "Personne de contact",
+    "partnershipType": "Type de partenariat",
+    "send": "Envoyer",
+    "success": "Message envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.",
+    "error": "Une erreur est survenue. Veuillez réessayer.",
+    "required": "Ce champ est obligatoire."
+  },
+  "footer": {
+    "desc": "Association Marocaine pour l'Inclusion Financière — Accompagner, former et connecter pour un avenir économique inclusif.",
+    "copyright": "© AMIF — Association Marocaine pour l'Inclusion Financière. Tous droits réservés.",
+    "quickLinks": "Liens rapides",
+    "followUs": "Suivez-nous"
+  },
+  "admin": {
+    "login": "Connexion Admin",
+    "dashboard": "Tableau de bord",
+    "blogPosts": "Articles de blog",
+    "teamMembers": "Membres de l'équipe",
+    "messages": "Messages",
+    "media": "Médiathèque",
+    "settings": "Paramètres",
+    "pages": "Contenu des pages",
+    "newPost": "Nouvel article",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "publish": "Publier",
+    "unpublish": "Dépublier",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "logout": "Déconnexion",
+    "totalPosts": "Total articles",
+    "totalMessages": "Messages reçus",
+    "totalMemberships": "Adhésions",
+    "totalPartnerships": "Partenariats",
+    "latestMessages": "Derniers messages",
+    "latestPosts": "Derniers articles",
+    "markRead": "Marquer comme lu",
+    "archive": "Archiver",
+    "status": {
+      "new": "Nouveau",
+      "read": "Lu",
+      "archived": "Archivé",
+      "draft": "Brouillon",
+      "published": "Publié"
+    }
+  }
+}

@@ -1,0 +1,133 @@
+.poles {
+  background: var(--color-white);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+.card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-base);
+  cursor: default;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--accent, var(--color-primary));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-slow);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: transparent;
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-lg);
+}
+
+.iconWrap {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-md);
+  background: var(--color-primary-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-base);
+}
+
+.card:hover .iconWrap {
+  background: var(--accent, var(--color-primary));
+  transform: rotate(-5deg) scale(1.05);
+}
+
+.icon {
+  font-size: 1.5rem;
+  transition: filter var(--transition-base);
+}
+
+.card:hover .icon {
+  filter: brightness(10);
+}
+
+.num {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-border);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  transition: color var(--transition-base);
+}
+
+.card:hover .num {
+  color: var(--color-primary-100);
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-darker);
+  margin-bottom: var(--space-md);
+  line-height: 1.4;
+}
+
+[lang="ar"] .title {
+  line-height: 1.6;
+}
+
+.desc {
+  font-size: 0.875rem;
+  line-height: 1.75;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+[lang="ar"] .desc {
+  line-height: 1.9;
+}
+
+.bar {
+  height: 2px;
+  width: 30px;
+  background: var(--accent, var(--color-primary));
+  border-radius: var(--radius-full);
+  opacity: 0.3;
+  transition: all var(--transition-base);
+}
+
+.card:hover .bar {
+  width: 100%;
+  opacity: 0.15;
+}
+
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .grid { grid-template-columns: 1fr; }
+}
